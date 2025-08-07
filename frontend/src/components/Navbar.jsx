@@ -23,14 +23,14 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center bg-white p-4 shadow-md border-b-2 border-gray-300 mb-3'>
-      <img className='w-44 cursor -pointer' src={assets.logo} alt="" />
+      <img onClick={()=>navigate('/')} className='w-44 cursor -pointer' src={assets.logo} alt="" />
       <ul className='hidden md:flex items-start gap-5 font-medium '>
         <NavLink to='/'>
             <li className='py-1'>HOME</li>
             <hr className='border-none outline-none h-0.5 bg-indigo-500 w-3/5 m-auto hidden'/>
         </NavLink>
         <NavLink to='/doctors'>
-            <li className='py-1'>ALL DOCTORS</li>
+            <li className='py-1'>DOCTORS</li>
             <hr className='border-none outline-none h-0.5 bg-indigo-500 w-3/5 m-auto hidden'/>
         </NavLink>
         <NavLink to='/about'>

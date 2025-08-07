@@ -296,4 +296,18 @@ export const doctors = [
             line2: 'Circle, Ring Road, London'
         }
     },
+    {
+        _id: 'doc16',
+        name: 'Dr. Priya Nair',
+        image: Gastroenterologist,
+        speciality: 'Gastroenterologist',
+        degree: 'MD',
+        experience: '6 Years',
+        about: 'Dr. Priya Nair is a board-certified gastroenterologist specializing in digestive health, endoscopy, and patient-centered care. She is dedicated to providing advanced treatment for gastrointestinal disorders.',
+        fees: 70,
+        address: {
+            line1: '67th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
 ]
