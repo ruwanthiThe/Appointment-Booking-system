@@ -3,3 +3,7 @@
 .active {
   color: #4f46e5; /* Indigo-600 */
 }
+
+::-webkit-scrollbar {
+  @apply hidden
+}
