@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {assets} from '../assets/assets'
 import { NavLink, useNavigate } from 'react-router-dom'
 
@@ -9,6 +9,10 @@ const Navbar = () => {
   const handleCreateAccount = () => {
     navigate('/login');
   }
+
+  const [showMenu, setShowMenu] = useState(false)
+  const[token, setToken] = useState(true)
+
   return (
     <div className='flex justify-between items-center bg-white p-4 shadow-md'>
       <img className='w-44 cursor -pointer' src={assets.logo} alt="" />
@@ -31,7 +35,12 @@ const Navbar = () => {
         </NavLink>
       </ul>
       <div className='flex items-center gap-4'>
-        <button  className='bg-indigo-500 text-white px-8 py-3 rounded-full hidden md:block hover:bg-indigo-600 transition-colors duration-200 cursor-pointer' onClick={handleCreateAccount}>Create Account</button>
+        {
+          token ?
+          <div> </div>
+          :<button  className='bg-indigo-500 text-white px-8 py-3 rounded-full hidden md:block hover:bg-indigo-600 transition-colors duration-200 cursor-pointer' onClick={handleCreateAccount}>Create Account</button>
+        }
+        
       </div>
     </div>
   )
