@@ -37,7 +37,10 @@ const Navbar = () => {
       <div className='flex items-center gap-4'>
         {
           token ?
-          <div> </div>
+          <div className='flex items-center gap-2 cursor-pointer group relative'>
+            <img className='w-8 rounded-full' src={assets.profile_pic} alt=""/>
+            <img className='w-2.5' src={assets.dropdown_icon} alt=""/>
+          </div>
           :<button  className='bg-indigo-500 text-white px-8 py-3 rounded-full hidden md:block hover:bg-indigo-600 transition-colors duration-200 cursor-pointer' onClick={handleCreateAccount}>Create Account</button>
         }
         
