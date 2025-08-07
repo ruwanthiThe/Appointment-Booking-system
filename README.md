@@ -1,1 +1,1 @@
-# Appoinment-Booking-system
+# Appointment-Booking-system
