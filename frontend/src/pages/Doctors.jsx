@@ -44,7 +44,7 @@ const Doctors = () => {
         <div className='w-full grid gap-4 pt-5 gap-y-6 px-3 sm:px-0' style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
           {
             filterDoc.map((item, index) => (
-            <div onClick={()=>navigate(`/appointment/${item._id}`)} key={index} className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:-translate-y-2 transition-all duration-500 bg-white shadow-md flex flex-col w-full max-w-[260px] min-h-[370px] mx-auto'>
+            <div onClick={()=>navigate(`/appointment/${item._id}`)} key={index} className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:-translate-y-2 transition-all duration-500 bg-white shadow-md flex flex-col w-full max-w-[260px] min-h-[370px] mx-auto'> 
                 <img src={item.image} alt="" className='bg-blue-50 w-full h-56 object-cover flex-shrink-0' />
                 <div className='p-4 flex-1 flex flex-col justify-between'>
                     <div className='flex items-center gap-2 text-sm text-center text-green-500 mb-2'>

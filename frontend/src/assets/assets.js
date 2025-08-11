@@ -299,7 +299,7 @@ export const doctors = [
     {
         _id: 'doc16',
         name: 'Dr. Priya Nair',
-        image: Gastroenterologist,
+    image: doc6,
         speciality: 'Gastroenterologist',
         degree: 'MD',
         experience: '6 Years',
