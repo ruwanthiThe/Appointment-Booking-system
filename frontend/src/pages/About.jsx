@@ -6,9 +6,8 @@ const About = () => {
     <div className="w-full min-h-[400px] bg-gray-50 py-12">
       {/* Top: About Us Heading */}
       <div className="w-full flex justify-center mb-10">
-        <h2 className="text-5xl font-bold">
-          <span className="text-blue-600">About</span>
-          <span className="text-green-500 ml-2">Us</span>
+        <h2 className="text-5xl font-bold text-blue-600">
+          About Us
         </h2>
       </div>
       {/* Main Content: Image and Description Side by Side */}

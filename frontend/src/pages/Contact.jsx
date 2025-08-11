@@ -6,9 +6,8 @@ const Contact = () => {
     <div className="w-full min-h-[400px] bg-white py-12 flex flex-col items-center justify-center">
       {/* Heading */}
       <div className="w-full flex justify-center mb-10">
-        <h2 className="text-5xl font-bold">
-          <span className="text-blue-600">Contact</span>
-          <span className="text-green-500 ml-2">Us</span>
+        <h2 className="text-5xl font-bold text-blue-600">
+          Contact Us
         </h2>
       </div>
       {/* Main Content: Image and Contact Info Side by Side */}

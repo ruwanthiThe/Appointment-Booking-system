@@ -10,8 +10,8 @@ const TopDoctors = () => {
 
   return (
     <div className='flex flex-col items-center gap-4 my-16 text-gray-800 md:mx-10 py-10'>
-      <h1 className='text-3xl font-medium'>Doctors to Book Your Appointments</h1>
-      <p className='sm:w-1/3 text-center text-sm'>Explore our list of qualified and experienced doctors.</p>
+  <h1 className='text-3xl font-bold mb-2 text-blue-600'>Doctors to Book Your Appointments</h1>
+      <p className='sm:w-1/3 text-center text-md'>Explore our list of qualified and experienced doctors.</p>
       
       <div className='w-full grid gap-4 pt-5 gap-y-6 px-3 sm:px-0'
       style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}> 

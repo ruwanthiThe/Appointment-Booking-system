@@ -10,10 +10,10 @@ const Header = () => {
         <p className='text-3xl md:text-4xl lg:text-5xl text-white font-semibold leading-tight md:leading-tight lg:leading-tight'>
             Your Wellness Journey Starts  <br /> Here
         </p>
-        <div className='flex flx-col md:flex-row items-center gap-3 text-white text-sm font-light '>
+        <div className='flex flx-col md:flex-row items-center gap-3 text-white text-md font-light '>
             <img className='w-28' src ={assets.group_profiles} alt=""/>
-            <p>Find the best doctor for you <br className='hidden sm:block'/>
-            Schedule your appointment online and get the care you need.</p>
+            <p>Find the best doctor for you Schedule<br className='hidden sm:block'/>
+             your appointment online and get the care you need.</p>
         </div>
         <a href="#speciality" className='flex items-center gap-2 bg-gradient-to-r from-teal-400 to-teal-600 px-6 py-3 rounded-full text-white font-semibold shadow-lg hover:from-teal-500 hover:to-teal-700 transition-colors duration-200 hover:scale-105'>
             Book Appointment
