@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 import {Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import Doctors from './pages/Doctors'
@@ -14,9 +15,11 @@ import Footer from './components/Footer'
 import Feedback from './pages/Feedback'
 
 const App = () => {
+  const location = useLocation();
+  const showOnlyNavbar = location.pathname === '/login';
   return (
-    <div className='mx-4 sm:mx-[10%]>'>
-      <Navbar />
+    <div className='mx-4 sm:mx-[10%]'>
+  <Navbar />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path = '/doctors' element={<Doctors/>} />
@@ -29,8 +32,8 @@ const App = () => {
         <Route path = '/my-appoinments' element={<MyAppoinments/>} />
         <Route path = '/appoinment/:docId' element={<Appoinment/>} />
         <Route path = '/feedback' element={<Feedback/>} />
-        </Routes>
-        <Footer />
+      </Routes>
+  {!showOnlyNavbar && <Footer />}
     </div>
   )
 }

@@ -23,7 +23,7 @@ const UserFeedbacks = () => {
   const navigate = useNavigate()
   return (
     <div className="w-full py-12 bg-gray-50 flex flex-col items-center">
-  <h2 className="text-md font-bold mb-8 text-blue-600">User Feedbacks</h2>
+  <h2 className="text-3xl font-bold mb-8 text-blue-600">User Feedbacks</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
         {feedbacks.map((fb, idx) => (
           <div key={idx} className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center transition duration-300 hover:shadow-xl">
