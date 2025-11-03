@@ -307,7 +307,7 @@ const PatientDetail = () => {
         {/* Footer */}
         <footer className="mt-12 text-center text-gray-500 text-sm py-6 border-t border-gray-200">
           <div className="flex items-center justify-center space-x-6 mb-2">
-            <span>© 2024 MediCare Hospital Management System</span>
+            <span>© 2025 MediLink Hospital Management System</span>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <span>All rights reserved</span>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>

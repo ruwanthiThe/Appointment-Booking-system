@@ -180,7 +180,7 @@ const Dashboard = () => {
           <div className="flex items-center justify-between mb-6">
             <div>
               <h2 className="text-2xl font-bold text-gray-900">Dashboard Overview</h2>
-              <p className="text-gray-600 mt-1">Welcome to your healthcare management dashboard</p>
+              <p className="text-gray-600 mt-1">Welcome to your Medilink dashboard</p>
             </div>
             <div className="flex items-center space-x-3">
               <span className="text-sm text-gray-500">Last updated: Just now</span>
@@ -209,7 +209,7 @@ const Dashboard = () => {
 
         <footer className="mt-12 text-center text-gray-500 text-sm py-6 border-t border-gray-200">
           <div className="flex items-center justify-center space-x-6 mb-2">
-            <span>© 2024 MediCare Hospital Management System</span>
+            <span>© 2025 MediLink Hospital Management System</span>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <span>All rights reserved</span>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>

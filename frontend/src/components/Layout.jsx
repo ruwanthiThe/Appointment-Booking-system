@@ -54,15 +54,15 @@ const Layout = () => {
         icon: Info,
         read: false
       },
-      {
-        id: 2,
-        type: 'success',
-        title: 'Welcome to MediCare',
-        message: 'Your account has been successfully set up and verified',
-        time: '1 day ago',
-        icon: CheckCircle,
-        read: false
-      }
+        {
+          id: 2,
+          type: 'success',
+          title: 'Welcome to MediLink',
+          message: 'Your account has been successfully set up and verified',
+          time: '1 day ago',
+          icon: CheckCircle,
+          read: false
+        }
     ]
 
     const roleSpecificNotifications = {
@@ -330,8 +330,8 @@ const Layout = () => {
         <div className="fixed inset-y-0 left-0 flex w-64 flex-col bg-gradient-to-b from-blue-700 to-blue-900 text-white shadow-xl">
           <div className="flex h-16 items-center justify-between px-6 shrink-0">
             <div className="flex items-center space-x-2">
-              <Activity className="text-white h-6 w-6" />
-              <span className="font-bold text-xl">MediCare</span>
+            <Activity className="text-white h-6 w-6" />
+            <span className="font-bold text-xl">MediLink</span>
             </div>
             <button
               onClick={() => setSidebarOpen(false)}
@@ -383,10 +383,10 @@ const Layout = () => {
 
       {/* Desktop sidebar - Fixed */}
       <div className="hidden lg:flex lg:flex-col lg:w-64 lg:fixed lg:inset-y-0 bg-gradient-to-b from-blue-700 to-blue-900 text-white shadow-xl z-40">
-        <div className="p-6 shrink-0">
+          <div className="p-6 shrink-0">
           <div className="flex items-center space-x-2">
             <Activity className="text-white h-6 w-6" />
-            <span className="font-bold text-xl">MediCare</span>
+            <span className="font-bold text-xl">MediLink</span>
           </div>
           <p className="text-blue-200 text-xs mt-1">Hospital Management</p>
         </div>

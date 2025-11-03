@@ -227,8 +227,8 @@ const PatientAppointments = () => {
       doc.setFillColor(59, 130, 246)
       doc.rect(0, 0, 210, 40, 'F')
       doc.setTextColor(255, 255, 255)
-      doc.setFontSize(20)
-      doc.text('MediCare Clinic', 105, 20, { align: 'center' })
+  doc.setFontSize(20)
+  doc.text('MediLink Clinic', 105, 20, { align: 'center' })
       doc.setFontSize(10)
       doc.text('123 Health Street, Colombo, Sri Lanka', 105, 28, { align: 'center' })
       doc.text('Phone: +94 11 234 5678', 105, 34, { align: 'center' })
@@ -273,8 +273,8 @@ const PatientAppointments = () => {
       }
 
       doc.setFontSize(10)
-      doc.text(`Generated on ${new Date().toLocaleDateString()}`, 105, yPos + 20, { align: 'center' })
-      doc.text('Thank you for choosing MediCare Clinic!', 105, yPos + 26, { align: 'center' })
+  doc.text(`Generated on ${new Date().toLocaleDateString()}`, 105, yPos + 20, { align: 'center' })
+  doc.text('Thank you for choosing MediLink Clinic!', 105, yPos + 26, { align: 'center' })
 
       doc.save(`medicine_receipt_${selectedMedicineRecord._id}.pdf`)
     } catch (error) {
@@ -762,11 +762,11 @@ const PatientAppointments = () => {
               {/* Enhanced Clinic Header */}
               <div className="text-center border-b border-gray-100 pb-8">
                 <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  MediCare Clinic
+                  MediLink Clinic
                 </h1>
                 <p className="text-gray-600 mt-3 text-lg">Excellence in Healthcare</p>
                 <p className="text-gray-500 mt-2">123 Health Street, Colombo, Sri Lanka</p>
-                <p className="text-gray-500 text-sm">Phone: +94 11 234 5678 • Email: info@medicare.lk</p>
+                <p className="text-gray-500 text-sm">Phone: +94 11 234 5678 • Email: info@medilink.lk</p>
               </div>
 
               {/* Enhanced Patient & Doctor Info */}

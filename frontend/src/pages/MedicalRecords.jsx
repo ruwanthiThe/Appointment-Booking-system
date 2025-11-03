@@ -206,7 +206,7 @@ const MedicalRecords = () => {
         doc.setFontSize(8)
         doc.setFont('helvetica', 'normal')
         doc.text(`Page ${i} of ${totalPages}`, pageWidth - 20, pageHeight - 10, { align: 'right' })
-        doc.text('MediCare Hospital Management System', 20, pageHeight - 10)
+  doc.text('MediLink Hospital Management System', 20, pageHeight - 10)
       }
 
       // Download the PDF

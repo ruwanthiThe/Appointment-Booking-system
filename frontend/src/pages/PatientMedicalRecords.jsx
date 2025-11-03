@@ -98,8 +98,8 @@ const PatientMedicalRecords = () => {
       doc.setTextColor(255, 255, 255)
       doc.setFontSize(18)
       doc.text('Medical Record', 105, 15, { align: 'center' })
-      doc.setFontSize(10)
-      doc.text('MediCare Clinic - Confidential Medical Document', 105, 22, { align: 'center' })
+  doc.setFontSize(10)
+  doc.text('MediLink Clinic - Confidential Medical Document', 105, 22, { align: 'center' })
 
       doc.setTextColor(0, 0, 0)
       

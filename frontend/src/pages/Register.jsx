@@ -106,7 +106,7 @@ const Register = () => {
                 <Stethoscope className="h-6 w-6 text-blue-600" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white">MediCare+</h1>
+                <h1 className="text-2xl font-bold text-white">MediLink+</h1>
                 <p className="text-blue-200 text-sm">Hospital Management System</p>
               </div>
             </div>
@@ -462,7 +462,7 @@ const Register = () => {
                   <Building className="h-8 w-8 text-white" />
                 </div>
                 <div>
-                  <h1 className="text-4xl font-bold text-white">Join MediCare+</h1>
+                  <h1 className="text-4xl font-bold text-white">Join MediLink+</h1>
                   <p className="text-blue-100 text-lg">Your Health, Our Priority</p>
                 </div>
               </div>

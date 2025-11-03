@@ -89,7 +89,7 @@ const Login = () => {
                 <Stethoscope className="h-6 w-6 text-blue-600" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white">MediCare+</h1>
+                <h1 className="text-2xl font-bold text-white">MediLink+</h1>
                 <p className="text-blue-200 text-sm">Hospital Management System</p>
               </div>
             </div>
@@ -257,7 +257,7 @@ const Login = () => {
                   <Building className="h-8 w-8 text-white" />
                 </div>
                 <div>
-                  <h1 className="text-4xl font-bold text-white">MediCare+ Hospital</h1>
+                  <h1 className="text-4xl font-bold text-white">MediLink+ Hospital</h1>
                   <p className="text-blue-100 text-lg">Advanced Healthcare Management</p>
                 </div>
               </div>
@@ -305,7 +305,7 @@ const Login = () => {
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center space-x-3">
             <Stethoscope className="h-8 w-8 text-white" />
-            <h2 className="text-xl font-bold text-white">MediCare+ Features</h2>
+            <h2 className="text-xl font-bold text-white">MediLink+ Features</h2>
           </div>
           <button className="text-white" onClick={() => {/* Close function */}}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
