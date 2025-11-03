@@ -282,22 +282,22 @@ const Register = () => {
               {/* Account Type */}
               <div>
                 <label className="block text-sm font-medium text-blue-100 mb-2">
-                  Account Type
+                  Account Type *
                 </label>
-                <input
+                <select
                   {...register('role', {
-                    required: 'Role is required'
+                    required: 'Account type is required'
                   })}
-                  type="hidden"
-                  value="patient"
-                />
-                <div className="w-full px-4 py-3 bg-blue-600/20 border border-blue-400/30 rounded-xl text-white text-center">
-                  <div className="flex items-center justify-center">
-                    <User className="h-5 w-5 mr-2 text-blue-300" />
-                    <span className="font-medium">Patient Account</span>
-                    <CheckCircle className="h-4 w-4 ml-2 text-green-400" />
-                  </div>
-                </div>
+                  className="w-full px-4 py-3 bg-white/5 border border-blue-300/20 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
+                >
+                  <option value="" className="bg-gray-800">Select account type</option>
+                  <option value="patient" className="bg-gray-800">Patient</option>
+                  <option value="doctor" className="bg-gray-800">Doctor</option>
+                  <option value="admin" className="bg-gray-800">Administrator</option>
+                </select>
+                {errors.role && (
+                  <p className="mt-1 text-sm text-red-300">{errors.role.message}</p>
+                )}
                 <p className="mt-2 text-sm text-blue-200 text-center">
                   Public registration is available for patients. Medical staff accounts require administrative approval.
                 </p>

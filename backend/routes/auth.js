@@ -20,20 +20,11 @@ router.post('/register', async (req, res) => {
       });
     }
 
-    // Restrict doctor and staff registration to admins only
-    // This should be handled by admin-only endpoints, not public registration
-    if (role === 'doctor' || role === 'staff') {
-      return res.status(403).json({
-        success: false,
-        message: 'Doctor and staff accounts must be created by administrators'
-      });
-    }
-
-    // Only allow patient registration through public endpoint
-    if (role !== 'patient') {
+    // Validate role
+    if (!['patient', 'doctor', 'admin'].includes(role)) {
       return res.status(400).json({
         success: false,
-        message: 'Invalid role for public registration'
+        message: 'Invalid role selected'
       });
     }
 
